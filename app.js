@@ -18,7 +18,7 @@ const errorController = require('./controllers/error');
 const shopController = require('./controllers/shop');
 const isAuth = require('./middleware/is-auth');
 const User = require('./models/user');
-console.log(process.env.test);
+
 const MONGODB_URI = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.g2xgtvf.mongodb.net/${process.env.MONGO_DEFAULT_DATABASE}`;
 // const MONGODB_URI ="mongodb+srv://ahmed:1234@cluster0.g2xgtvf.mongodb.net/shop";
 const app = express();
